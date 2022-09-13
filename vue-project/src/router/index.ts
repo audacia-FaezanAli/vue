@@ -10,21 +10,21 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/signup',
+      name: 'Sign Up',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/SignUpView.vue')
     },
-    {
-      path: '/userform',
-      name: 'userform',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/UserFormView.vue')
-    },
+    // {
+    //   path: '/userform',
+    //   name: 'userform',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/UserFormView.vue')
+    // },
     {
       path: '/employees',
       name: 'employees',
@@ -33,14 +33,14 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/EmployeeTableView.vue')
     },
-    {
-      path: '/workshop',
-      name: 'workshop',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/WorkshopView.vue')
-    },
+    // {
+    //   path: '/workshop',
+    //   name: 'workshop',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/WorkshopView.vue')
+    // },
   ]
 })
 

@@ -9,24 +9,16 @@ const pageHeader = ref('Home Page')
 </script>
 
 <template>
-    <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
+  <header>
     <div class="wrapper">
       <HelloWorld :msg='pageHeader'/>
       
       <nav>
         <RouterLink @click="pageHeader='Home Page'" to="/">Home</RouterLink>
-        <RouterLink @click="pageHeader='About'" to="/about">About</RouterLink>
-        <RouterLink @click="pageHeader='New User'" to="/userform">User Form</RouterLink>
+        <RouterLink @click="pageHeader='Sign Up'" to="/signup">Sign Up</RouterLink>
+        <!-- <RouterLink @click="pageHeader='New User'" to="/userform">User Form</RouterLink> -->
         <RouterLink @click="pageHeader='Employees'" to="/employees">Employees</RouterLink>
-        <RouterLink @click="pageHeader='Workshop'" to="/workshop">Workshop</RouterLink>
+        <!-- <RouterLink @click="pageHeader='Workshop'" to="/workshop">Workshop</RouterLink> -->
       </nav>
     </div>
   </header>
